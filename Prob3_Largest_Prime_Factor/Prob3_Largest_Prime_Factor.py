@@ -27,7 +27,7 @@ def primeFactors(num):
             num = num/count
         count +=1
 
-    if num > count:
+    if num > 1:
         factor.append(num)
     return factor
 
