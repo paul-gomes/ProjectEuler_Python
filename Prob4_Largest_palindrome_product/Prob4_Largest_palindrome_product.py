@@ -47,4 +47,4 @@ print ("largest palindrome made from the product of two 3-digit numbers: " + str
 endTime = time.time()
 totalTime = endTime - stratTime
 
-print("The progrm runtime: " + str(totalTime))
+print("The progrm runtime: %d ms" % (totalTime*1000))

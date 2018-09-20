@@ -8,15 +8,17 @@
 # To find the prime factorization, we need to break the number to its prime factors
 # "Factors" are the numbers you multiply together to get another number
 # Can we divide 147 exactly by 2?
-# 147 ÷ 2 = 73½
-# No it can't. The answer should be a whole number, and 73½ is not.
+# 147 / 2 = 73 1/2
+# No it can't. The answer should be a whole number, and 73 1/2is not.
 # Let's try the next prime number, 3:
-# 147 ÷ 3 = 49
+# 147 / 3 = 49
 # That worked, now we try factoring 49, and find that 7 is the smallest prime number that works:
-# 49 ÷ 7 = 7
+# 49 / 7 = 7
 # And that is as far as we need to go, because all the factors are prime numbers.
-# 147 = 3 × 7 × 7
+# 147 = 3 * 7 * 7
 
+
+import time
 
 def primeFactors(num):
     factor = []
@@ -31,9 +33,16 @@ def primeFactors(num):
         factor.append(num)
     return factor
 
+
+startTime = time.time()
 number = input("Enter an integer to find the largest prime number: ")
 
 primeFactorList = primeFactors(number)
 print "Largest prime factor: ", primeFactorList[-1]
+
+endTime = time.time()
+totalTime = endTime - startTime
+
+print("The progrm runtime: %d ms" % (totalTime*1000))
 
 
