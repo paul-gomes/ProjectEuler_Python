@@ -1,7 +1,7 @@
 # ProjectEluer Problems Solution - Python 
 
 This repository contains different Prject Euler probelms. 
-All the probelms has been solved utilizing Python. 
+All the probelms has been solved in Python language. 
 
 ## Problem source link
 All the problem are from Project Euler (https://projecteuler.net).
